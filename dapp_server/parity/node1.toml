@@ -1,0 +1,30 @@
+[parity]
+chain = "demo-spec.json"
+base_path = "./tmp/parity1"
+
+[network]
+port = 30301
+
+[rpc]
+interface = "192.168.137.212"
+port = 8541
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
+
+[websockets]
+#interface = "all"
+port = 8547
+
+[ui]
+port = 8181
+
+[dapps]
+port = 8081
+
+[account]
+password = ["node.pwds"]
+
+[mining]
+engine_signer = "0x00Aa39d30F0D20FF03a22cCfc30B7EfbFca597C2"
+reseal_on_txs = "none"
+reseal_min_period = 5000
+force_sealing = true

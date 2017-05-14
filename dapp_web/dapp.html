@@ -1,0 +1,188 @@
+﻿<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基于区块链的网站备案信息公示系统</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/pub.css">
+</head>
+
+<body>
+
+    <div class="htmleaf-container">
+        <header class="htmleaf-header">
+            <h1>基于区块链的网站备案信息公示系统</h1>
+            <div class="htmleaf-links">
+                <!--<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.htmleaf.com/" title="jQuery之家" target="_blank"><span> jQuery之家</span></a>-->
+                <!--<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="http://www.htmleaf.com/jQuery/Menu-Navigation/201611214209.html" title="返回下载页" target="_blank"><span> 返回下载页</span></a>-->
+            </div>
+        </header>
+        <!--<div class="Menubox tab1 menu_top">-->
+        <!--<ul>-->
+        <!--&lt;!&ndash;<li id="one1" onclick="setTab('one',1,3)" class="hover">多基金指令</li>&ndash;&gt;-->
+        <!--&lt;!&ndash;<li id="one2" onclick="setTab('one',2,3)">组合指令</li>&ndash;&gt;-->
+        <!--&lt;!&ndash;<li id="one3" onclick="setTab('one',3,3)">指令管理</li>&ndash;&gt;-->
+        <!--</ul>-->
+        <!--</div>-->
+        <div class="header-wrap">
+            <div class="navwrap">
+                <div id="nav">
+                    <div class="navbar clearfix">
+                        <a id="one1" onclick="setTab('one',1,3)" class="current hover" href="#">登记信息</a>
+                        <a id="one2" onclick="setTab('one',2,3)" href="#">主体信息</a>
+                        <a id="one3" onclick="setTab('one',3,3)" href="#">节点信息</a>
+
+                        <!--<a id="one1" class="current hover" href="#">登记信息</a>-->
+                        <!--<a id="one2" href="#">主体信息</a>-->
+                        <!--<a id="one3" href="#">节点信息</a>-->
+                        <!--<a href="#">主体信息</a>-->
+                    </div>
+
+                    <div class="pros subpage">
+                        <h2>节点连接</h2>
+                        <ul class="prosul" id="proinfo">
+                            <!--节点信息合约：-->
+                            <!--属性：名称，类别（投票|只读），状态（启动|暂停），节点公钥，IP，端口，加入时间。-->
+                            <!--方法1：上传节点信息（状态默认为启动）。-->
+                            <!--方法2：获得节点信息。-->
+                            <!--准备数据填充：（投票节点）浙江省管局、新疆省管局、广东省管局、工信部直属局。-->
+                            <!--准备数据填充：（只读节点）政府-杭州滨江区、企业-杭州阿里云、浏览器-搜狗杭州、志愿者-杭州张三）-->
+                            <li id="nodeInfo1"> 浙江省管局</li>
+                            <li id="nodeInfo2"> 新疆省管局</li>
+                            <li id="nodeInfo3"> 广东省管局</li>
+                            <li id="nodeInfo4"> 工信部直属局</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-body">
+        <div class="app-download">
+            <p><span class="light">个体工商户</span>手机报送</p>
+            <p>请搜索“<span class="light">浙江工商</span>”</p>
+            <p>或直接扫码下载APP</p>
+            <div class="app-android-ewm">
+                <img src="./images/android-ewm.png" alt="">
+                <p>安卓版</p>
+            </div>
+            <div class="app-android-ewm" style="margin-top: 6px;">
+                <img src="./images/ios-ewm.png" alt="">
+                <p>苹果版</p>
+            </div>
+
+        </div>
+
+
+        <div id="con_one_1" class="current" display:none>
+            <div class="primer-info">
+                <label>请填写完整的备案信息</label>
+            </div>
+            <!--主办单位编号，主办单位名称，主办单位性质（企业|个人），负责人姓名-->
+            <!--网站备案/许可证号，主办单位编号，状态（通过、关停、过期），域名，网站名称，首页地址，审核时间。-->
+            <!--网站备案/许可证号，主办单位编号，状态（通过、关停、过期），域名，网站名称，首页地址，审核时间。-->
+            <!--许可证号： 浙B2-20080224-1-->
+            <!--主办编号： 浙B2-20080224-->
+            <!--首页地址： www.baidu.com-->
+            <!--审核时间： 2017-04-25-->
+            <!--域名： www.baidu.com-->
+            <!--状态： 通过-->
+            <div class="form-info">
+
+                <label>许可证号：</label>
+                <input type="text" id="registerId" />
+
+                <label>主办编号：</label>
+                <input type="text" id="ownId"><br>
+
+                <label>首页地址：</label>
+                <input type="text" id="firstAddress">
+
+                <label>网站名称：</label>
+                <input type="text" id="urlName"><br>
+
+                <label>审核时间：</label>
+                <input type="text" id="checkTime">
+
+                <label>域名：</label>
+                <input type="text" id="url"><br>
+                <!--
+                <label>状态：</label>
+                <input type="text" id="status">-->
+
+                <!--<label></label>-->
+                <!--<input type="hidden">-->
+
+                <input type="submit" class="commitInfo commitInfo1" value="登 记">
+            </div>
+        </div>
+
+        <!--属性：主办单位编号，主办单位名称，主办单位性质（企业|个人），负责人姓名。-->
+
+        <div id="con_one_2" style="display:none">
+            <div class="primer-info">
+                <label>请填写完整的主体信息</label>
+            </div>
+            <div class="form-info">
+                <label>主办编号：</label>
+                <input type="text" id="OwnId1" />
+
+                <label>单位名称：</label>
+                <input type="text" id="OwnName"><br>
+
+                <label>单位性质：</label>
+                <input type="text" id="OwnType">
+
+                <label>负责人姓名：</label>
+                <input type="text" id="OwnPerson"><br>
+
+                <input type="submit" class="commitInfo commitInfo2" value="添 加">
+            </div>
+        </div>
+
+        <!--名称，类别（投票|只读），状态（启动|暂停），节点公钥，IP，端口，加入时间。-->
+        <div id="con_one_3">
+            <div class="primer-info">
+                <label>请填写完整的节点信息</label>
+            </div>
+
+            <div class="form-info">
+                <label>节点名称：</label>
+                <input type="text" id="nodeName" />
+
+                <label>节点类别：</label>
+                <input type="text" id="nodeType"><br>
+
+                <label>节点状态：</label>
+                <input type="text" id="nodeStatus">
+
+                <label>节点公钥：</label>
+                <input type="text" id="nodePub"><br>
+
+                <label>节点端口：</label>
+                <input type="text" id="nodePort">
+
+                <label>加入时间：</label>
+                <input type="text" id="addTime"><br>
+
+                <input type="submit" class="commitInfo commitInfo3" value="增 加">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./js/web3.js"></script>
+    <script src="./js/jquery-3.0.0.js"></script>
+    <script src="./js/dapp.js"></script>
+    <script src="./js/tab.js"></script>
+
+    <!--<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>-->
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "dapp_dev",
+  "version": "1.0.0",
+  "description": "<html>\r <head>\r \t<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r \t<title>web3 test</title>\r \t<style type=\"text/css\">\r \t\tbody{font-size: 14px;}\r \t\t.content{\r \t\t\twidth: 800px;\r \t\t\tmargin: 0 auto;\r \t\t}\r \t</style>\r </head>\r <body>\r \t<h1>web3 test</h1>",
+  "main": "index.js",
+  "dependencies": {
+    "@parity/parity.js": "^1.7.70",
+    "ethjs": "^0.2.7",
+    "init": "^0.1.2",
+    "web3": "^0.18.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

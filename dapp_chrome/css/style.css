@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    /*height: 300px;*/
+    /*background:url("../images/123.png") no-repeat;*/
+    /*background-size:100% 100%;*/
+    font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+h3 {
+    text-align: center;
+    color: #FF5C5C;
+}
+
+.main-info {
+    /*text-align: left;*/
+    /*margin-left:20px;*/
+    background:url("../images/back.png") no-repeat right 0px bottom 0px;
+}
+
+.main-info ul{
+    margin: 0px;
+    padding: 10px 10px;
+}
+
+
+.main-info li{
+    list-style-type: none;
+    border-bottom: 1px solid #eee;
+    margin: 0px 25px;
+    margin-bottom: 20px;
+}
+
+.main-info  li:first-child, .main-info  li:last-child {
+    border-bottom: 1px solid #aaa;
+}
+
+.main-info label {
+    display: inline-block;
+    margin: 0px 0px;
+    display: inline-block;
+
+    /*padding: 12px;*/
+}
+
+.left-info {
+    width: 80px;
+    /*height: 30px;*/
+}
+
+.right-info {
+    width: auto;
+    /*height: 30px;*/
+}
+
+/*.left-block {*/
+    /*width: 120px;*/
+    /*display: inline-block;*/
+    /*text-align: right;*/
+/*}*/
+
+/*.right-block {*/
+    /*display: inline-block;*/
+    /*text-align: left;*/
+    /*width: auto;*/
+/*}*/

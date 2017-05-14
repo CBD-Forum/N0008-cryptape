@@ -1,0 +1,153 @@
+{
+  "manifest_version": 2,
+  "name": "基于区块链的备案信息公示系统",
+  "version": "1.0",
+  "description": "基于区块链的备案信息公示系统",
+  "icons": {
+    "512": "images/512.png"
+  },
+  "web_accessible_resources": [
+    "images/*.png"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "128": "images/defalut.png"
+    },
+    "default_popup": "popup.html",
+    // 标题
+    "default_title": "基于区块链的备案信息公示系统"
+  },
+  "background": {
+    //    "persistent": false,//不能与webRequest API接口同时存在。
+    "scripts": [
+      "js/web3.js",
+//      "js/ethereumjs-all.js",
+      "js/jquery-3.0.0.js",
+      "js/back-script.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "*://*/*",
+    "webRequestBlocking",
+    "webRequest"
+  ],
+  "options_page": "option.html"
+}
+
+//{
+//use debug
+//  "devtools_page": "devtools.html",
+//  "background": {
+//    "persistent": false,
+//    "scripts": [
+//      "js/jquery-3.0.0.js",
+//      "js/back-script.js"
+//    ]
+//  },
+//  "browser_action": {
+//    "default_icon": {
+//      "poolleaf": "img/poolleaf.png"
+//    },
+//    "default_popup": "popup.html",
+//    // 标题
+//    "default_title": "基于区块链的备案信息公示系统"
+//  },
+//  "content_scripts": [
+//    {
+//      "all_frames": true,
+//      "css": [
+//        "bubble_gss.css"
+//      ],
+//      "js": [
+//        "bubble_compiled.js"
+//      ],
+//      "matches": [
+//        "http://*/*",
+//        "https://*/*"
+//      ]
+//    }
+//  ],
+//  "content_security_policy": "script-src 'self' 'unsafe-eval' https://translate.googleapis.com; object-src 'self'",
+//  "default_locale": "en",
+//  "description": "__MSG_5636646071825253269__",
+//  "icons": {
+//    "128": "icons/128.png"
+//  },
+//  "manifest_version": 2,
+//  "name": "__MSG_8969005060131950570__",
+//  "options_page": "options.html",
+//  "permissions": [
+//    "tabs",
+//    //    "*://*/*",
+//    //注意这里一定要写
+//    "webRequestBlocking",
+//    //注意这里一定要写
+//    "webRequest",
+//    "cookies",
+//    "activeTab",
+//    "contextMenus",
+//    "storage",
+//    "http://*/*",
+//    "https://*/*"
+//  ],
+//  "version": "2.0.6"
+//  "web_accessible_resources": [
+//    "popup_css_compiled.css",
+//    "options.html"
+//  ]
+//}
+
+
+
+////----------
+//{
+//  "app": {
+//    "background": {
+//      "scripts": ["background.js"]
+//    }
+//  },
+//  "manifest_version": 2,
+//  "name": "My Extension",
+//  "version": "versionString",
+//  "default_locale": "en",
+//  "description": "A plain text description",
+//  "icons": {
+//    "16": "images/icon16.png",
+//    "48": "images/icon48.png",
+//    "128": "images/icon128.png"
+//  },
+//  "browser_action": {
+//    "default_icon": {
+//      "19": "images/icon19.png",
+//      "38": "images/icon38.png"
+//    },
+//    "default_title": "Extension Title",
+//    "default_popup": "popup.html"
+//  },
+//  "page_action": {
+//    "default_icon": {
+//      "19": "images/icon19.png",
+//      "38": "images/icon38.png"
+//    },
+//    "default_title": "Extension Title",
+//    "default_popup": "popup.html"
+//  },
+//  "background": {
+//    "scripts": ["background.js"]
+//  },
+//  "content_scripts": [
+//    {
+//      "matches": ["http://www.google.com/*"],
+//      "css": ["mystyles.css"],
+//      "js": ["jquery.js", "myscript.js"]
+//    }
+//  ],
+//  "options_page": "options.html",
+//  "permissions": [
+//    "*://www.google.com/*"
+//  ],
+//  "web_accessible_resources": [
+//    "images/*.png"
+//  ]
+//}
